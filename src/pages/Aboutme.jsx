@@ -10,7 +10,7 @@ const Aboutme = () => {
         and iam a web developer. <br />
         <br />
         <br />
-        I am currently pursuing my education as an electrical engineering student.<br />
+        "Hi!, I'm Abhiram. I'm an aspiring web development working to master the full stack of web development. This is my personal portfolio site. It's something I'm working on and continue to make it better. Academically, I'm in my final year of my engineering degree and expecting to graduate in 2023."
       </div>
 
     </div>
