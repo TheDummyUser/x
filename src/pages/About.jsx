@@ -30,8 +30,8 @@ const About = () => {
 
   return (
     <div className='grid place-items-center h-screen bg-DD311D3F text-white font-mono'>
-      <div className=' space-x-6'><span>{showGibberish ? text : ''}</span><span className='underline md:text-5xl text-3xl'>AboutMe.</span><span>{showGibberish ? text : ''}</span></div>
-      <div className='m-0 p-0 md:text-3xl text-xl'>
+      <div className=' space-x-6'><span className='md:text-base tetx-xs'>{showGibberish ? text : ''}</span><span className='underline md:text-5xl text-3xl'>AboutMe.</span><span className='md:text-sm text-xs'>{showGibberish ? text : ''}</span></div>
+      <div className='m-0 p-0 md:text-3xl text-lg'>
         <p className='text-center'>"I am Abhiram.</p>
         <p>I am final year Electrical Engineering student,
          <span className='text-end'> I like ethical hacking & web development." </span>
@@ -39,8 +39,8 @@ const About = () => {
         <p className='m-10 text-center'>
           visit the below pages too..
           <br />
-          <p className='mt-5'>{showGibberish ? text : ''}</p> 
-          <p className=''>{showGibberish ? text : ''}</p>
+          <p className='mt-5 text-base'>{showGibberish ? text : ''}</p> 
+          <p className=' text-base'>{showGibberish ? text : ''}</p>
         </p>
         
       </div>
