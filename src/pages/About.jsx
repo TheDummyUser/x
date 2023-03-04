@@ -30,25 +30,23 @@ const About = () => {
 
   return (
     <div className='grid place-items-center h-screen bg-DD311D3F text-white font-mono'>
-      <div className=' space-x-6'><span className='md:text-base tetx-xs'>{showGibberish ? text : ''}</span><span className='underline md:text-5xl text-3xl'>AboutMe.</span><span className='md:text-sm text-xs'>{showGibberish ? text : ''}</span></div>
-      <div className='m-0 p-0 md:text-3xl text-lg text-center'>
-        <p className='text-center'>"I am Abhiram.</p>
-        <p>I am final year Electrical Engineering student,
-         <span className='text-end'> I like ethical hacking & web development." </span>
+      <div className='md:flex place-items-center md:space-x-3'>
+        <span className='md:text-base text-xs md:inline-flex hidden'>{showGibberish ? text : ''} </span>
+        <span className='md:text-base text-xs'>{showGibberish ? text : ''} </span>
+        <span className='md:text-5xl text-lg underline'>about me</span> 
+        <span className='md:text-base text-xs'> {showGibberish ? text : ''}</span>
+        <span className='md:text-base text-xs md:inline-flex hidden'> {showGibberish ? text : ''}</span>
+        </div>
+      <div>
+        <p>
+          about me, the tings i do.
         </p>
-        <p className='m-10 text-center'>
-          visit the below pages too..
-          <br />
-          <p className='mt-5 text-base'>{showGibberish ? text : ''}</p> 
-          <p className=' text-base'>{showGibberish ? text : ''}</p>
-        </p>
-        
       </div>
-      <footer className='flex space-x-12 lg:space-x-96 underline lg:text-3xl'>
-        <p><Link to={'/projects'}>projects</Link></p>
-        <p><Link to={'/'}>home</Link></p>
-        <p><Link to={'/contactme'}>contact me</Link></p>
-      </footer>
+      <div className='flex md:space-x-96 space-x-6 md:text-base place-items-center'>
+        <p><Link to={'/'}>Home</Link></p>
+        <p><Link to={'/projects'}>Projects</Link></p>
+        <p><Link to={'/contactme'}>Contact Me</Link></p>
+      </div>
     </div>
   )
 }

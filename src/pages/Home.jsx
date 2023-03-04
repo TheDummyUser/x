@@ -40,7 +40,7 @@ const Home = () => {
       <span>{showGibberish ? text : ''}</span>
       
       </span>
-      <div className='m-0 p-0 md:text-5xl text-white text-2xl text-center'>
+      <div className='m-0 p-0 md:text-5xl text-white text-xl text-center'>
         <p>what are you looking at?</p>
         <p className='block text-end'>visit the <Link to={'/about'}> <span className="underline">about</span> page.</Link> </p>
       </div>
