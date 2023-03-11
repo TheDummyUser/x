@@ -36,7 +36,13 @@ const Contactme = () => {
         <span className='md:text-base text-xs md:inline-flex hidden'> {showGibberish ? text : ''}</span>
         </div>
       <div>
-        contact details
+        <p className=''>
+          Contactme: <br className='' />
+          <div className='mt-5'>
+            <a href="mailto:abhiram.reddy122002@gmail.com">mail me</a><br />
+            <a href="https;//github.com/grim909" className=''>github</a>
+          </div>
+        </p>
       </div>
       <div className='flex md:space-x-96 space-x-6 md:text-base place-items-center'>
         <p><Link to={'/'}>Home</Link></p>

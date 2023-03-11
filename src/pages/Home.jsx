@@ -31,12 +31,12 @@ const Home = () => {
   return (
     <div className='grid h-screen place-items-center m-0 p-0 font-mono bg-L88304E'>
       <span className='flex mt-0 space-x-2 text-white md:text-sm text-xs text-center'>
-      <span>{showGibberish ? text : ''}</span>
-      <span>{showGibberish ? text : ''}</span>
-      <span>{showGibberish ? text : ''}</span>
-      <span>{showGibberish ? text : ''}</span>
-      <span>{showGibberish ? text : ''}</span>
-      <span>{showGibberish ? text : ''}</span>
+      <span className='md:flex hidden'>{showGibberish ? text : ''}</span>
+      <span className='md:flex hidden'>{showGibberish ? text : ''}</span>
+      <span className='md:flex hidden'>{showGibberish ? text : ''}</span>
+      <span className='md:flex hidden'>{showGibberish ? text : ''}</span>
+      <span className='md:flex hidden'>{showGibberish ? text : ''}</span>
+      <span className='md:flex hidden'>{showGibberish ? text : ''}</span>
       <span>{showGibberish ? text : ''}</span>
       
       </span>
@@ -45,12 +45,12 @@ const Home = () => {
         <p className='block text-end'>visit the <Link to={'/about'}> <span className="underline">about</span> page.</Link> </p>
       </div>
       <span className='flex mt-0 space-x-2 text-white md:text-sm text-xs text-center'>
-      <span>{showGibberish ? text : ''}</span>
-      <span>{showGibberish ? text : ''}</span>
-      <span>{showGibberish ? text : ''}</span>
-      <span>{showGibberish ? text : ''}</span>
-      <span>{showGibberish ? text : ''}</span>
-      <span>{showGibberish ? text : ''}</span>
+      <span className='md:flex hidden'>{showGibberish ? text : ''}</span>
+      <span className='md:flex hidden'>{showGibberish ? text : ''}</span>
+      <span className='md:flex hidden'>{showGibberish ? text : ''}</span>
+      <span className='md:flex hidden'>{showGibberish ? text : ''}</span>
+      <span className='md:flex hidden'>{showGibberish ? text : ''}</span>
+      <span className='md:flex hidden'>{showGibberish ? text : ''}</span>
       <span>{showGibberish ? text : ''}</span>
       </span>
     </div>

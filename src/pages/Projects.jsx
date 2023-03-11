@@ -38,8 +38,26 @@ const Projects = () => {
         <span className='md:text-base text-xs md:inline-flex hidden'> {showGibberish ? text : ''}</span>
         </div>
       <div>
-        <p>
-          projects ive done till now.
+        <p className='mx-10 grid'>
+          my side projects i've worked on upuntil now and still working: <br />
+          <span className='mt-5'>
+            <a href="https://github.com/grim909/TheNewsApp" className='grid'>
+              The News App:<br />
+              <span className='text-center mt-2'>made out using vite, reactjs, tailwindCss and NewsApi</span>
+              </a>
+          </span>
+          <span className='mt-5'>
+            <a href="https://github.com/grim909/hackernews" className='grid'>
+              HackerNews:<br />
+              <span className='text-center mt-2'>news app made up using hackernews api, reactjs and tailwindCss</span>
+              </a>
+          </span>
+          <span className='mt-5'>
+            <a href="https://github.com/grim909/hackernews" className='grid'>
+              X:<br />
+              <span className='text-center mt-2'>the portfolio site</span>
+              </a>
+          </span>
         </p>
       </div>
       <div className='flex md:space-x-96 space-x-6 md:text-base place-items-center'>

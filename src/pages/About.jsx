@@ -37,12 +37,11 @@ const About = () => {
         <span className='md:text-base text-xs'> {showGibberish ? text : ''}</span>
         <span className='md:text-base text-xs md:inline-flex hidden'> {showGibberish ? text : ''}</span>
         </div>
-      <div>
-        <p>
-          about me, the tings i do.
+        <p className='mx-10'>
+          hi i am abhiram, i am a final year electrical engineering student. <br />
+          i like web development and i do a lot of ethical hacking. i have worked on few projects which i've them on <span className='underline'>projects</span>.
         </p>
-      </div>
-      <div className='flex md:space-x-96 space-x-6 md:text-base place-items-center'>
+      <div className='flex md:space-x-96 space-x-6 md:text-base place-items-center underline'>
         <p><Link to={'/'}>Home</Link></p>
         <p><Link to={'/projects'}>Projects</Link></p>
         <p><Link to={'/contactme'}>Contact Me</Link></p>
