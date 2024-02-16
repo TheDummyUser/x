@@ -1,52 +1,27 @@
-import React, { useState, useEffect } from 'react';
-import {Link} from "react-router-dom"
+import React from 'react'
+import Heder from '../components/Heder'
 
 const About = () => {
-  const [text, setText] = useState('3002 12345 4456');
-  const [showGibberish, setShowGibberish] = useState(true);
-
-  useEffect(() => {
-    const gibberishTimer = setInterval(() => {
-      const newText = [...text];
-      for (let i = 0; i < newText.length; i++) {
-        const randomChar = String.fromCharCode(Math.floor(Math.random() * 26) + 97);
-        if (newText[i] !== ' ') {
-          newText[i] = randomChar;
-        }
-      }
-      setText(newText.join(''));
-    }, 100); // Set the time in milliseconds for how often the letters should change.
-
-    const textTimer = setTimeout(() => {
-      setShowGibberish(false);
-      clearInterval(gibberishTimer);
-    }, 5000); // Set the time in milliseconds for how long the gibberish text should be displayed.
-
-    return () => {
-      clearInterval(gibberishTimer);
-      clearTimeout(textTimer);
-    };
-  }, [text]);
-
   return (
-    <div className='grid place-items-center h-screen bg-DD311D3F text-white font-mono'>
-      <div className='md:flex place-items-center md:space-x-3'>
-        <span className='md:text-base text-xs md:inline-flex hidden'>{showGibberish ? text : ''} </span>
-        <span className='md:text-base text-xs'>{showGibberish ? text : ''} </span>
-        <span className='md:text-5xl text-lg underline'>about me</span> 
-        <span className='md:text-base text-xs'> {showGibberish ? text : ''}</span>
-        <span className='md:text-base text-xs md:inline-flex hidden'> {showGibberish ? text : ''}</span>
-        </div>
-        <p className='mx-10'>
-          hi i am abhiram, i am a final year electrical engineering student. <br />
-          i like web development and i do a lot of ethical hacking. i have worked on few projects which i've them on <span className='underline'>projects</span>.
-        </p>
-      <div className='flex md:space-x-96 space-x-6 md:text-base place-items-center underline'>
-        <p><Link to={'/'}>Home</Link></p>
-        <p><Link to={'/projects'}>Projects</Link></p>
-        <p><Link to={'/contactme'}>Contact Me</Link></p>
+    <>
+      <Heder />
+      <div className='p-5 text-teal-200 h-screen bg-slate-900'>
+        
+        <p className=' text-xl md:text-6xl pt-32'>About:</p>
+
+      <div className=' space-y-5 pt-12'><p className=''>
+       hey yo! guys I am Abhiram, so i've recently graduated In Bachelors of Electrical And Electronics engineering.
+      </p>
+      <p className=''>
+        Am into Web Dev, and linux, actually i do a lot of linux ig! if you ask why? idk i just like linux more than window and here is one of my rice <a className=' underline' href="https://www.reddit.com/r/unixporn/comments/1aqir6d/hyprland_kanagawa_colorscheme_is_op/?utm_source=share&utm_medium=web2x&context=3"> click here</a> to view it...</p>
+      
+      <p>
+         you can visit my GitHub to check all that things i do and i work on.. <a href="https://github.com/TheDummyUser">  </a>
+      </p>
+      
       </div>
-    </div>
+      </div>
+    </>
   )
 }
 

@@ -1,56 +1,31 @@
-import React, { useState, useEffect } from 'react';
-import {Link} from "react-router-dom"
+import React from "react";
+import Heder from "../components/Heder";
 const Contactme = () => {
-  const [text, setText] = useState('3002 12345 4456');
-  const [showGibberish, setShowGibberish] = useState(true);
-
-  useEffect(() => {
-    const gibberishTimer = setInterval(() => {
-      const newText = [...text];
-      for (let i = 0; i < newText.length; i++) {
-        const randomChar = String.fromCharCode(Math.floor(Math.random() * 26) + 97);
-        if (newText[i] !== ' ') {
-          newText[i] = randomChar;
-        }
-      }
-      setText(newText.join(''));
-    }, 100); // Set the time in milliseconds for how often the letters should change.
-
-    const textTimer = setTimeout(() => {
-      setShowGibberish(false);
-      clearInterval(gibberishTimer);
-    }, 5000); // Set the time in milliseconds for how long the gibberish text should be displayed.
-
-    return () => {
-      clearInterval(gibberishTimer);
-      clearTimeout(textTimer);
-    };
-  }, [text]);
   return (
-    <div className='grid place-items-center h-screen bg-DD311D3F text-white font-mono'>
-      <div className='md:flex place-items-center md:space-x-3'>
-        <span className='md:text-base text-xs md:inline-flex hidden'>{showGibberish ? text : ''} </span>
-        <span className='md:text-base text-xs'>{showGibberish ? text : ''} </span>
-        <span className='md:text-5xl text-lg underline'>Contact Me</span> 
-        <span className='md:text-base text-xs'> {showGibberish ? text : ''}</span>
-        <span className='md:text-base text-xs md:inline-flex hidden'> {showGibberish ? text : ''}</span>
-        </div>
-      <div>
-        <p className=''>
-          Contactme: <br className='' />
-          <div className='mt-5'>
-            <a href="mailto:abhiram.reddy122002@gmail.com">mail me</a><br />
-            <a href="https;//github.com/grim909" className=''>github</a>
-          </div>
-        </p>
-      </div>
-      <div className='flex md:space-x-96 space-x-6 md:text-base place-items-center'>
-        <p><Link to={'/'}>Home</Link></p>
-        <p><Link to={'/projects'}>Projects</Link></p>
-        <p><Link to={'/about'}>About Me</Link></p>
-      </div>
-    </div>
-  )
-}
+    <>
+      <Heder />
 
-export default Contactme
+      <div className=" bg-slate-900 text-teal-300 h-screen p-5 pt-32">
+        <p className="md:text-6xl text-xl">Contact Me:</p>
+
+        <div className=" space-y-3">
+          <div className=" pt-12 space-y-8">
+            <p>Ofcource i can center this div so...</p>
+            <p>
+              {" "}
+              <a href="">Github</a>
+            </p>
+            <p>
+              <a href="mailto:abhiram.reddy122002@gmail.com">Gmail</a>
+            </p>
+            <p>
+              ping Me on Discord: adorable__brain69
+            </p>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Contactme;
