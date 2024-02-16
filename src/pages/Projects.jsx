@@ -5,7 +5,7 @@ const Projects = () => {
   return (
     <>
       <Heder />
-      <div className=" bg-slate-900 h-full md:h-screen text-teal-300 p-5">
+      <div className="font-JetBrains bg-slate-900 h-full md:h-screen text-teal-300 p-5">
         <div className=" pt-32 ">
           <p className="md:text-6xl text-xl"> Projects:</p>
         </div>
