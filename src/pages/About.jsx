@@ -14,7 +14,7 @@ const About = () => {
           </p>
           <p className="">
              Am into Web Dev, and linux, actually i do a lot of linux ig! if
-            you ask why? idk i just like linux more than window and here is one
+            you ask why? idk i just like linux more than windows and here is one
             of my rice{" "}
             <a
               className=" underline"
@@ -29,6 +29,22 @@ const About = () => {
           <p>
              you can visit my GitHub to check all that things i do and i work
             on.. <a href="https://github.com/TheDummyUser">  </a>
+          </p>
+          <hr className=" h-1 bg-slate-50" />
+
+          <p className=" space-y-4">
+            <p>languages ive learned:</p>
+            <p>
+              <p>html, css, javascript.. (react, react native)</p>
+              <p>bash</p>
+              <p>nix</p>
+            </p>
+          </p>
+          <hr />
+
+          <p className=" space-y-5">
+            <p>skills:</p>
+            <p>linux!</p>
           </p>
         </div>
       </div>
