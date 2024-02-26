@@ -5,7 +5,7 @@ const Contactme = () => {
     <>
       <Heder />
 
-      <div className=" font-JetBrains bg-slate-900 text-teal-300 h-screen p-5 pt-32">
+      <div className=" font-JetBrains bg-black text-slate-400 h-screen p-5 pt-32">
         <p className="md:text-6xl text-xl">Contact Me:</p>
 
         <div className=" space-y-3">

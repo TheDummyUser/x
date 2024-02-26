@@ -4,7 +4,7 @@ const About = () => {
   return (
     <>
       <Heder />
-      <div className=" font-JetBrains p-5 text-teal-200 h-screen bg-slate-900">
+      <div className=" font-JetBrains p-5 text-slate-400 h-screen bg-black">
         <p className=" text-xl md:text-6xl pt-32">About:</p>
 
         <div className=" space-y-5 pt-12">
@@ -30,21 +30,25 @@ const About = () => {
              you can visit my GitHub to check all that things i do and i work
             on.. <a href="https://github.com/TheDummyUser">  </a>
           </p>
-          <hr className=" h-1 bg-slate-50" />
+          <hr className=" h-1" />
 
           <p className=" space-y-4">
-            <p>languages ive learned:</p>
-            <p>
+            <p className=" underline">languages i've learned:</p>
+            <p className=" pl-14">
               <p>html, css, javascript.. (react, react native)</p>
               <p>bash</p>
               <p>nix</p>
             </p>
           </p>
-          <hr />
+          <hr className="h-1" />
 
-          <p className=" space-y-5">
+          <p className=" space-y-2">
             <p>skills:</p>
-            <p>linux!</p>
+            <p className=" space-y-2 pl-14">
+              <p>linux</p>
+              <p>git, version control.</p>
+              <p>wireshark</p>
+            </p>
           </p>
         </div>
       </div>
