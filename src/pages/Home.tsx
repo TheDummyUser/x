@@ -10,7 +10,6 @@ const Home = () => {
             Okie if you find this page, that means you one of the internet
             freeks ig!
           </p>
-          <p>changed something!</p>
         </div>
       </div>
     </>
