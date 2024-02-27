@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from "react";
 import Heder from "../components/Heder";
+
 const Home = () => {
   return (
     <>
       <Heder />
-
       <div className=" font-JetBrains bg-black text-slate-400 h-full w-full justify-between p-5">
         <div className="flex flex-col justify-center items-center h-screen space-y-4">
           <p>

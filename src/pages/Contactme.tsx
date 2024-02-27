@@ -1,4 +1,3 @@
-import React from "react";
 import Heder from "../components/Heder";
 const Contactme = () => {
   return (
@@ -10,10 +9,10 @@ const Contactme = () => {
 
         <div className=" space-y-3">
           <div className=" pt-12 space-y-8">
-            <p>Ofcource i can center this div so...</p>
+            <p>Ofcource i can center this div but i won't...</p>
             <p>
               {" "}
-              <a href="">Github</a>
+              <a href="https://github.com/TheDummyUser">Github</a>
             </p>
             <p>
               <a href="mailto:abhiram.reddy122002@gmail.com">Gmail</a>
