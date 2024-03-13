@@ -3,7 +3,7 @@ const About = () => {
   return (
     <>
       <Heder />
-      <div className=" font-JetBrains p-5 text-slate-400 h-screen bg-black">
+      <div className=" font-JetBrains p-5 text-slate-400 h-full bg-black">
         <p className=" text-xl md:text-6xl pt-32">About:</p>
 
         <div className=" space-y-5 pt-12">
@@ -34,9 +34,10 @@ const About = () => {
           <p className=" space-y-4">
             <p className=" underline">languages i've learned:</p>
             <p className=" pl-14">
-              <p>html, css, javascript.. (react, react native)</p>
-              <p>bash</p>
-              <p>nix</p>
+              <p>Html, Css, Javascript.. FrameWorks: (react, react native)</p>
+              <p>Python</p>
+              <p>Bash</p>
+              <p>Nix</p>
             </p>
           </p>
           <hr className="h-1" />
@@ -44,9 +45,9 @@ const About = () => {
           <p className=" space-y-2">
             <p>skills:</p>
             <p className=" space-y-2 pl-14">
-              <p>linux</p>
-              <p>git, version control.</p>
-              <p>wireshark</p>
+              <p>Linux</p>
+              <p>Git, version control.</p>
+              <p className="">Wireshark</p>
             </p>
           </p>
         </div>

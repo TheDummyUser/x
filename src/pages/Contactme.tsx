@@ -7,7 +7,7 @@ const Contactme = () => {
       <div className=" font-JetBrains bg-black text-slate-400 h-screen p-5 pt-32">
         <p className="md:text-6xl text-xl">Contact Me:</p>
 
-        <div className=" space-y-3">
+        <div className=" space-y-3 pl-14 md:pl-36">
           <div className=" pt-12 space-y-8">
             <p>Ofcource i can center this div but i won't...</p>
             <p>
